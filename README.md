@@ -11,13 +11,13 @@ JavaScript is powerful: we're able to take user interaction and information and 
 
 ### Technical Requirements
 
-- Call ```$.val()``` on inputs to get the string value of your user's input
-- Store user input in a variable called ```city```
-- Use ```$.click``` to trigger the application to conduct a city search when the user clicks the "submit" button
-- Create ```if / else if``` conditionals to control the flow of your application
+CHECK - Call ```$.val()``` on inputs to get the string value of your user's input
+CHECK - Store user input in a variable called ```city```
+CHECK - Use ```$.click``` to trigger the application to conduct a city search when the user clicks the "submit" button
+CHECK - Create ```if / else if``` conditionals to control the flow of your application
 - Write at least six different lines of pseudocode and display them inline as JavaScript comments
-- Use the ```$.ready()``` handler to delay your code from executing until all DOM assets have been loaded
-- Use the ```||``` operator in your conditionals to allow for multiple string values to execute ```if/else if``` statement code
+CHECK - Use the ```$.ready()``` handler to delay your code from executing until all DOM assets have been loaded
+CHECK - Use the ```||``` operator in your conditionals to allow for multiple string values to execute ```if/else if``` statement code
 - If a user submits:
 
   - "New York" or "New York City" or "NYC" make the background of the page nyc.jpg
