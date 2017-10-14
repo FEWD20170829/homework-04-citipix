@@ -1,62 +1,50 @@
-$(function() {
+ // wait until the document is ready
 
-var city;
-// listen for click event
+ $(function() {
 
-	$("#submit-btn").click(update);
+  // when someone hits submit, run the fucntion showCity
 
-  function update() {
-    console.log("user clicked on update button");
+$("form").submit(showCity);
 
-      // read data typed into city-type
-    // store it into a variable "city"
+
+function showCity(event) {
+  event.preventDefault();
+
 
     var city = $("#city-type").val();
+  
 
-    console.log("city");
+    // read data typed into city-type
+    // store it into a variable "city"
+
 
     // if New York City is = city say New York City
     // if Los Angles is = city say Los Angeles
     // if San Francisco is = city say San Francisco
     // if Sydney is = city say Sydney 
 
-    if (city === "New York City" || city === "NYC" || city === "New York") {
+    if (city === "New York" || city === "NYC" || city === "New York City" || city === "nyc") {
+      $("#starter-image").attr("class","nyc");
 
-      console.log("new york was selected");
-      $("container").attr("class", "nyc");
+    } else if (city === "San Francisco" || city == "Bay Area" || city == "san francisco"|| city == "SF") {
+      $("#starter-image").attr("class","sf");
 
-    } else (city === "Los Angeles" || city === "LA" || city === "LAX") {
-      
-      console.log("los angeles was selected");
-      $("container").attr("class", "la");
+    } else if (city == "Los Angeles" || city == "LA" || city == "los angeles" || city == "LA") {
+      $("#starter-image").attr("class","ls");
 
-    } else if (city === "San Francisco" || city === "SF" || city === "Bay Area") {
+    } else if (city == "Austin" || city == "ATX" || city == "austin") {
+      $("#starter-image").attr("class","austin");
 
-      console.log("San Francisco was selected");
-      $("container").attr("class", "sf");
-
-    } else if (city === "Austin"|| city === "ATX") {
-
-      console.log("Austin was selected");
-      $("container").attr("class", "austin");
-
-    } else if (city === "Sydney" || city === "SYD")
-
-      console.log("Sydney was selected");
-      $("container").attr("class", "sydney");
+    } else if (city == "Sydney" || city == "SYD" || city == "sydney") {
+      $("#starter-image").attr("class","sydney");
+    
+    } else {
+      $("body").addClass("starter-image")
+      alert("Oops, we don't have that picture!")
+      //in case the user enters something that doesn't have a picture
+    }
   }  
-
-	// //display the city-type image
-
-	$("#display").img("city-type");
-
 
 
 	
-
-
-
-
-
-
-	});
+});
