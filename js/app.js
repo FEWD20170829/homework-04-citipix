@@ -5,7 +5,7 @@ $(function() {
 
   function getPicture() {
    var city = $("#city-type").val();
-   console.log(getPicture);
+ 
 
  
 
