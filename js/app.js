@@ -19,7 +19,6 @@ else if (city === "Los Angeles" || city === "LA") {
 
  else (city === "San Francisco" || city === "SF") { 
   $('body').css('background-image',"url('images/sf.jpg');
-  console.log("Changed to SF");
 }
 
   else (city === "Austin" || city "ATX") {
