@@ -1,24 +1,13 @@
 $(function() {
 
-// creat a click event for submit button
-
 $("#submit-btn").click(changeCity);
 
-// Create a function for the Submit buttom
 function changeCity() {
 }
-
-//call a variable using var and .val
 
 var city = $("#city-type").val();
 
 function changeBackground(changeCity)
-
-
-// use else or else if when you type in city name
-// specify lowercase/uppercase for the cities
-// if() {
-// } else if() {
 
 if (city === "New York" || city === "NYC" || city === "New York City") {
   $('body').css('background-image', "url('images/nyc.jpg')");
