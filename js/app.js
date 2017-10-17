@@ -6,7 +6,6 @@ $("#submit-btn").click(changeCity);
 
 // Create a function for the Submit buttom
 function changeCity() {
-  console.log("clicked on Submit button")
 }
 
 //call a variable using var and .val
@@ -23,7 +22,6 @@ function changeBackground(changeCity)
 
 if (city === "New York" || city === "NYC" || city === "New York City") {
   $('body').css('background-image', "url('images/nyc.jpg')");
-  console.log("changed to NYC");
 }
 
 else if (city === "Los Angeles" || city === "LA") {
