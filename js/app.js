@@ -11,7 +11,7 @@ function changeCity() {
   
   city.toUpperCase();
 
-  if (city === "New York" || city === "nyc" || city === "New York City") {
+  if (city === "New York" || city === "NYC" || city === "New York City") {
     $('body').css('background-image', "url('images/nyc.jpg')");
   }
 
