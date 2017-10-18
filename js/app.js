@@ -3,14 +3,15 @@ $(function() {
 $("#submit-btn").click(changeCity);
 
 function changeCity() {
-
+  changeBackground();
 }
 
-var city = $("#city-type").val();
+ function changeBackground() {
+  var city = $("#city-type").val();
+  
+  city.toUpperCase();
 
-function changeBackground(changeCity) {
-
-  if (city === "New York" || city === "NYC" || city === "New York City") {
+  if (city === "New York" || city === "nyc" || city === "New York City") {
     $('body').css('background-image', "url('images/nyc.jpg')");
   }
 
